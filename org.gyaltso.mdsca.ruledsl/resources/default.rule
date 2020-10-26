@@ -1,0 +1,18 @@
+MethodNameRule {
+	format "^[a-z](_?[a-zA-Z0-9]+)*$"
+	allowClassName true
+	applyToPublic true
+	applyToProtected true
+	applyToPackage true
+	applyToPrivate true
+}
+
+MethodLengthRule {
+	max 10
+	countEmpty true
+}
+
+MethodParamLengthRule {
+	max 3
+	ignoreOverriddenMethods false
+}

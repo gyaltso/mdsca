@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: %pluginName
+Bundle-SymbolicName: org.gyaltso.mdsca.doc.model;singleton:=true
+Automatic-Module-Name: org.gyaltso.mdsca.doc.model
+Bundle-Version: 0.0.1.qualifier
+Bundle-ClassPath: .
+Require-Bundle: org.eclipse.core.runtime,
+ org.eclipse.emf.ecore;visibility:=reexport
+Bundle-ActivationPolicy: lazy
+Bundle-Vendor: %providerName
+Bundle-Localization: plugin
+Bundle-RequiredExecutionEnvironment: J2SE-1.5
+Export-Package: org.gyaltso.mdsca.doc.model.mdsca,
+ org.gyaltso.mdsca.doc.model.mdsca.impl,
+ org.gyaltso.mdsca.doc.model.mdsca.util

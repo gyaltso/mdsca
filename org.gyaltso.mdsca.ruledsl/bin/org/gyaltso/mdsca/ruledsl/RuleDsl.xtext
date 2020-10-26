@@ -1,0 +1,48 @@
+grammar org.gyaltso.mdsca.ruledsl.RuleDsl with org.eclipse.xtext.common.Terminals
+
+generate ruleDsl "http://www.gyaltso.org/mdsca/ruledsl/RuleDsl"
+import "http://www.eclipse.org/emf/2002/Ecore" as ecore
+
+RulesFile:
+	methodNameRule=MethodNameRule?
+	methdLengthRule=MethodLengthRule?
+	methodNoOfParamsRule=MethodParamCountRule?
+	typeName=TypeNameRule?;
+
+TypeNameRule returns Rule:
+	{TypeNameRule}
+	name='TypeName' '{'
+	'format' format=STRING
+	'applyToPublic' applyToPublic=BOOLEAN
+	'applyToProtected' applyToProtected=BOOLEAN
+	'applyToPackage' applyToPackage=BOOLEAN
+	'applyToPrivate' applyToPrivate=BOOLEAN
+	'}';
+
+MethodNameRule returns Rule:
+	{MethodNameRule}
+	name='MethodNameRule' '{'
+	'format' format=STRING
+	'allowClassName' allowClassName=BOOLEAN
+	'applyToPublic' applyToPublic=BOOLEAN
+	'applyToProtected' applyToProtected=BOOLEAN
+	'applyToPackage' applyToPackage=BOOLEAN
+	'applyToPrivate' applyToPrivate=BOOLEAN
+	'}';
+
+MethodLengthRule returns Rule:
+	{MethodLengthRule}
+	name='MethodLengthRule' '{'
+	'max' max=INT
+	'countEmpty' countEmpty=BOOLEAN
+	'}';
+
+MethodParamCountRule returns Rule:
+	{MethodParamCountRule}
+	name='MethodParamLengthRule' '{'
+	'max' max=INT
+	'ignoreOverriddenMethods' ignoreOverriddenMethods=BOOLEAN
+	'}';
+
+terminal BOOLEAN returns ecore::EBoolean:
+	('true' | 'false');

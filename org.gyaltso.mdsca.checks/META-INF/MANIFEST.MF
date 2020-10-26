@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Static code Checks
+Bundle-SymbolicName: org.gyaltso.mdsca.checks
+Bundle-Version: 1.0.0.qualifier
+Bundle-Vendor: Gyaltso Technologies
+Automatic-Module-Name: org.gyaltso.mdsca.codechecks
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Require-Bundle: org.eclipse.jdt.core;bundle-version="3.23.0",
+ org.gyaltso.mdsca.ruledsl;bundle-version="1.0.0",
+ org.gyaltso.mdsca.model;bundle-version="1.0.0"
+Export-Package: org.gyaltso.mdsca.checks,
+ org.gyaltso.mdsca.checks.method

@@ -1,0 +1,29 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: org.gyaltso.mdsca.ruledsl
+Bundle-ManifestVersion: 2
+Bundle-Name: org.gyaltso.mdsca.ruledsl
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: org.gyaltso.mdsca.ruledsl; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: org.eclipse.xtext,
+ org.eclipse.xtext.xbase,
+ org.eclipse.equinox.common;bundle-version="3.5.0",
+ org.eclipse.emf.ecore,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0",
+ org.eclipse.xtext.util,
+ org.eclipse.emf.common,
+ org.antlr.runtime;bundle-version="[3.2.0,3.2.1)"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: org.gyaltso.mdsca.ruledsl,
+ org.gyaltso.mdsca.ruledsl.parser.antlr,
+ org.gyaltso.mdsca.ruledsl.parser.antlr.internal,
+ org.gyaltso.mdsca.ruledsl.resource,
+ org.gyaltso.mdsca.ruledsl.ruleDsl,
+ org.gyaltso.mdsca.ruledsl.ruleDsl.impl,
+ org.gyaltso.mdsca.ruledsl.ruleDsl.util,
+ org.gyaltso.mdsca.ruledsl.scoping,
+ org.gyaltso.mdsca.ruledsl.serializer,
+ org.gyaltso.mdsca.ruledsl.services,
+ org.gyaltso.mdsca.ruledsl.validation
+Import-Package: org.apache.log4j

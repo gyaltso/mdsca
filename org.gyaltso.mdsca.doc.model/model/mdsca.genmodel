@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/org.gyaltso.mdsca.doc.model/src" modelPluginID="org.gyaltso.mdsca.doc.model"
+    modelName="Mdsca" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>mdsca.ecore</foreignModel>
+  <genPackages prefix="Mdsca" basePackage="org.gyaltso.mdsca.doc.model" disposableProviderFactory="true"
+      ecorePackage="mdsca.ecore#/">
+    <genClasses ecoreClass="mdsca.ecore#//Project">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mdsca.ecore#//Project/name"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference mdsca.ecore#//Project/warnings"/>
+    </genClasses>
+    <genClasses ecoreClass="mdsca.ecore#//Warning">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mdsca.ecore#//Warning/className"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mdsca.ecore#//Warning/message"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute mdsca.ecore#//Warning/lineNo"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

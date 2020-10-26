@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: Generator
+Bundle-SymbolicName: org.gyaltso.mdsca.doc.generator;singleton:=true
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: org.gyaltso.mdsca.doc.generator.Activator
+Bundle-Vendor: Gyaltso Technologies
+Require-Bundle: org.eclipse.ui,
+ org.eclipse.core.runtime,
+ org.obeonetwork.m2doc;bundle-version="3.1.0",
+ org.obeonetwork.m2doc.doc;bundle-version="3.1.0",
+ org.eclipse.acceleo.query,
+ org.obeonetwork.m2doc.ide;bundle-version="3.1.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Automatic-Module-Name: org.gyaltso.mdsca.doc.generator
+Bundle-ActivationPolicy: lazy

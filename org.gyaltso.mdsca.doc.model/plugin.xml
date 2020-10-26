@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.emf.ecore.generated_package">
+      <!-- @generated mdsca -->
+      <package
+            uri="http://org.gyaltso/mdsca/doc/model"
+            class="org.gyaltso.mdsca.doc.model.mdsca.MdscaPackage"
+            genModel="model/mdsca.genmodel"/>
+   </extension>
+
+</plugin>
